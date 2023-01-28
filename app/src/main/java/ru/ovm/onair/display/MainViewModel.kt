@@ -19,7 +19,7 @@ class MainViewModel : ViewModel() {
     private val _data: MutableLiveData<State> = MutableLiveData()
     val data: LiveData<State> = _data
 
-    var pollerJob: Job? = null
+    private var pollerJob: Job? = null
 
     private val client = HttpClient(CIO) {
         install(ContentNegotiation) {

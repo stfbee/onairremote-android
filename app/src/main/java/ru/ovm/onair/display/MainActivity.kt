@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(vb.root)
 
         vm.data.observe(this) {
-            when (it.onAir) {
+            when (it.on_air) {
                 true -> vb.root.setBackgroundResource(R.color.bg_onair)
                 false -> vb.root.setBackgroundResource(R.color.bg_idle)
             }

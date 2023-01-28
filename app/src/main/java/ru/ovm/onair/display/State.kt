@@ -4,5 +4,5 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class State(
-    val onAir: Boolean,
+    val on_air: Boolean,
 )
